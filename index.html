@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CBRK Public High School, Kamharian, Rithiya Bazar, Siddharthnagar, Uttar Pradesh. Nursery to Class 12.">
+<meta name="theme-color" content="#173b73">
+<title>CBRK Public High School | Learn, Grow, Shine</title>
+<style>
+:root{
+  --navy:#173b73;--blue:#2878d0;--sky:#eaf5ff;--coral:#ff705e;
+  --yellow:#ffd166;--mint:#4ec9a6;--purple:#8167d8;--ink:#1d2c43;
+  --muted:#66758b;--paper:#f8fbff;--white:#fff;--line:#e5edf6;
+  --shadow:0 16px 45px rgba(25,58,103,.10)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.container{width:min(1160px,90%);margin:auto}
+.topbar{background:var(--navy);color:#edf5ff;font-size:.86rem;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;min-width:220px}
+.brand svg{width:56px;height:56px;flex:none}
+.brand-name{font-weight:900;color:var(--navy);font-size:1rem;line-height:1.15;letter-spacing:.2px}
+.brand-name small{display:block;color:var(--muted);font-size:.68rem;letter-spacing:1.5px;margin-top:5px}
+.navlinks{display:flex;align-items:center;gap:24px;font-size:.92rem;font-weight:700;color:#334761}
+.navlinks a:hover{color:var(--blue)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:999px;background:var(--coral);color:#fff;font-weight:800;border:0;box-shadow:0 8px 20px #ff705e35;transition:.2s}
+.nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:saturate(1.08)}
+.menu{display:none;border:0;background:var(--sky);color:var(--navy);border-radius:10px;padding:9px 12px;font-size:1.25rem}
+.hero{position:relative;overflow:hidden;padding:86px 0 82px;background:linear-gradient(115deg,#f1f8ff 0%,#fff7f0 55%,#f5f1ff 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.hero:before{width:360px;height:360px;background:#ffd16645;right:-100px;top:-160px}
+.hero:after{width:260px;height:260px;background:#4ec9a625;left:-130px;bottom:-150px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5edf6;border-radius:99px;padding:7px 13px;color:var(--navy);font-size:.82rem;font-weight:800;box-shadow:0 5px 18px #173b7310}
+.pill i{width:9px;height:9px;background:var(--mint);border-radius:50%}
+h1{font-size:clamp(2.6rem,5.5vw,4.8rem);line-height:1.04;letter-spacing:-2px;color:var(--navy);margin:20px 0}
+h1 em{font-style:normal;color:var(--coral)}
+.hero-copy{max-width:600px;color:#56677f;font-size:1.08rem}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:27px}
+.btn.secondary{background:#fff;color:var(--navy);border:1px solid #dce7f4;box-shadow:none}
+.hero-note{margin-top:20px;color:#6d7b90;font-size:.88rem}
+.hero-art{position:relative;min-height:390px;display:grid;place-items:center}
+.art-card{position:relative;width:min(440px,100%);height:350px;border-radius:34px;background:linear-gradient(145deg,#2878d0,#173b73);box-shadow:0 28px 60px #173b7330;overflow:hidden;display:grid;place-items:center}
+.art-card:before{content:"";position:absolute;width:300px;height:300px;border:2px solid #ffffff30;border-radius:50%;top:-120px;right:-70px}
+.art-card:after{content:"";position:absolute;width:230px;height:230px;border:2px solid #ffffff25;border-radius:50%;bottom:-135px;left:-50px}
+.school-illustration{position:relative;z-index:1;width:82%;max-width:360px}
+.float-tag{position:absolute;z-index:2;background:#fff;padding:12px 16px;border-radius:16px;box-shadow:var(--shadow);font-weight:850;color:var(--navy)}
+.float-tag span{display:block;color:var(--muted);font-size:.72rem;font-weight:600}
+.tag-one{left:-5px;top:25px}.tag-two{right:-8px;bottom:30px}
+.section{padding:82px 0}
+.section.soft{background:var(--paper)}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:2px;font-weight:900;color:var(--purple)}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-1px;color:var(--navy);margin:9px 0 13px}
+.section-head p,.muted{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-panel{border-radius:28px;padding:35px;background:linear-gradient(140deg,#e9f5ff,#fff0e9);min-height:350px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.about-panel svg{width:90%;max-width:420px}
+.about-copy h2{margin-top:8px}
+.checks{list-style:none;padding:0;margin:22px 0}
+.checks li{margin:11px 0;color:#4e6077}
+.checks li:before{content:"✓";display:inline-grid;place-items:center;width:23px;height:23px;border-radius:50%;background:#ddf8ee;color:#16865f;font-weight:900;margin-right:10px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feature{background:#fff;border:1px solid var(--line);border-radius:20px;padding:27px;box-shadow:0 8px 28px #173b7308;transition:.2s}
+.feature:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.iconbox{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:1.65rem;margin-bottom:15px}
+.ic-blue{background:#e6f2ff}.ic-coral{background:#fff0ed}.ic-yellow{background:#fff6d9}.ic-mint{background:#e2fbf3}.ic-purple{background:#f0ebff}
+.feature h3{color:var(--navy);margin:0 0 7px;font-size:1.15rem}
+.feature p{color:var(--muted);margin:0;font-size:.94rem}
+.classes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.class-chip{padding:18px;border-radius:16px;text-align:center;font-weight:850;color:var(--navy);background:#eaf5ff}
+.class-chip:nth-child(4n+2){background:#fff0ed}.class-chip:nth-child(4n+3){background:#fff6d9}.class-chip:nth-child(4n){background:#e5fbf3}
+.class-chip small{display:block;font-size:.75rem;color:#68778c;font-weight:650;margin-top:3px}
+.life-banner{background:linear-gradient(110deg,#173b73,#2878d0);color:white;border-radius:28px;padding:42px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}
+.life-banner h2{color:white;margin:0 0 10px}.life-banner p{color:#dcecff;margin:0;max-width:700px}
+.life-banner .btn{background:var(--yellow);color:var(--navy);box-shadow:none;white-space:nowrap}
+.notice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.notice{border:1px solid var(--line);border-radius:18px;padding:24px;background:white}
+.notice-label{font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:1.2px;color:var(--coral)}
+.notice h3{color:var(--navy);margin:9px 0}
+.notice p{color:var(--muted);font-size:.93rem;margin:0}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+.contact-card{background:var(--navy);border-radius:22px;color:white;padding:30px}
+.contact-card h3{color:var(--yellow);font-size:1.35rem;margin-top:0}
+.contact-row{display:flex;gap:13px;margin:20px 0;align-items:flex-start}
+.contact-row b{display:block;color:#fff}
+.contact-row span{color:#d6e4f5;font-size:.92rem}
+.contact-icon{width:39px;height:39px;flex:none;border-radius:12px;background:#ffffff18;display:grid;place-items:center}
+.form-card{border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+.form-card h3{color:var(--navy);margin-top:0}
+form{display:grid;gap:13px}
+label{font-size:.85rem;font-weight:750;color:#43556d}
+input,textarea,select{width:100%;margin-top:5px;border:1px solid #d9e3ef;border-radius:10px;padding:12px 13px;font:inherit;color:var(--ink);background:white}
+textarea{min-height:105px;resize:vertical}
+.form-submit{border:0;border-radius:999px;background:var(--coral);color:white;padding:13px 20px;font:inherit;font-weight:850}
+.form-help{font-size:.78rem;color:var(--muted);margin:0}
+footer{background:#102b54;color:#d9e7f7;padding:32px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-brand{font-weight:900;color:white}.footer-small{font-size:.83rem;color:#b9cce3}
+footer a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.navlinks{gap:14px}.nav-cta{display:none}.hero-grid{gap:25px}.feature-grid,.notice-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){
+ .topbar .container{justify-content:center;text-align:center}
+ .nav{min-height:72px}.menu{display:block}
+ .navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 5%;box-shadow:0 15px 25px #173b7315;flex-direction:column;align-items:flex-start}
+ .navlinks.open{display:flex}
+ .hero{padding:65px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .hero-art{min-height:330px}.art-card{height:300px}
+ .about-grid{gap:28px}.about-panel{min-height:280px}
+ .classes{grid-template-columns:repeat(2,1fr)}
+ .life-banner{grid-template-columns:1fr;padding:30px}
+}
+@media(max-width:520px){.container{width:88%}.section{padding:62px 0}.feature-grid,.notice-grid{grid-template-columns:1fr}.hero-art{min-height:290px}.art-card{height:265px}.float-tag{font-size:.82rem;padding:9px 12px}.tag-one{left:-4px}.tag-two{right:-3px}.brand-name{font-size:.88rem}.brand svg{width:49px;height:49px}h1{letter-spacing:-1.3px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>📍 Kamharian, Rithiya Bazar, Siddharthnagar, Uttar Pradesh</span><span>🌟 Nursery to Class 12</span></div></div>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="CBRK Public High School home">
+      <svg viewBox="0 0 100 100" role="img" aria-label="CBRK school crest">
+        <path d="M50 5 88 19v28c0 24-15 39-38 49C27 86 12 71 12 47V19Z" fill="#173b73" stroke="#ffd166" stroke-width="4"/>
+        <path d="M24 28h52v35H24z" rx="4" fill="#fff"/>
+        <path d="M50 29v34M27 33q12-7 23 0v28q-11-7-23 0zm46 0q-12-7-23 0v28q11-7 23 0" fill="#eaf5ff" stroke="#2878d0" stroke-width="2"/>
+        <path d="M30 23h40" stroke="#ff705e" stroke-width="4" stroke-linecap="round"/>
+        <text x="50" y="78" text-anchor="middle" font-size="13" font-weight="900" fill="#ffd166">CBRK</text>
+      </svg>
+      <span class="brand-name">CBRK PUBLIC<br>HIGH SCHOOL<small>LEARN • GROW • SHINE</small></span>
+    </a>
+    <button class="menu" aria-label="Open navigation" aria-expanded="false" onclick="const n=document.querySelector('.navlinks');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">☰</button>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#academics">Academics</a><a href="#campus">Campus Life</a><a href="#notices">Updates</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Enquire now ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <div class="pill"><i></i> A place to learn, grow and shine</div>
+   <h1>Big dreams begin with <em>great learning.</em></h1>
+   <p class="hero-copy">Welcome to CBRK Public High School. We believe every student has potential worth discovering, nurturing and celebrating — from the first school years through Class 12.</p>
+   <div class="hero-actions"><a class="btn" href="#about">Discover our school <span>→</span></a><a class="btn secondary" href="#contact">Contact us</a></div>
+   <p class="hero-note">📚 Classes from Nursery to Class 12 · Kamharian, Siddharthnagar</p>
+  </div>
+  <div class="hero-art">
+   <div class="float-tag tag-one">📖 Learn every day<span>Curiosity starts here</span></div>
+   <div class="art-card">
+    <svg class="school-illustration" viewBox="0 0 420 310" role="img" aria-label="Illustration of a welcoming school building">
+     <circle cx="210" cy="130" r="115" fill="#ffffff" opacity=".12"/>
+     <path d="M54 139 210 43l156 96" fill="#ffd166" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>
+     <path d="M82 133h256v125H82z" fill="#fff" rx="5"/>
+     <path d="M178 188h64v70h-64z" fill="#2878d0"/>
+     <path d="M105 157h42v39h-42zm168 0h42v39h-42z" fill="#bfe5ff" stroke="#2878d0" stroke-width="5"/>
+     <path d="M195 215h30m-15-27v70" stroke="#fff" stroke-width="4"/>
+     <path d="M65 260h290" stroke="#ffd166" stroke-width="8" stroke-linecap="round"/>
+     <path d="M210 12v30" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+     <path d="M210 12h46l-12 13 12 13h-46" fill="#ff705e"/>
+     <g fill="#ffd166"><path d="M54 226q-25-35-3-55 25 17 3 55zm0 0q-30-8-29-33 27-5 29 33zm312 0q25-35 3-55-25 17-3 55zm0 0q30-8 29-33-27-5-29 33z"/></g>
+     <path d="M50 260v-40m320 40v-40" stroke="#fff" stroke-width="6"/>
+     <g fill="#fff"><circle cx="115" cy="281" r="5"/><circle cx="140" cy="281" r="5"/><circle cx="280" cy="281" r="5"/><circle cx="305" cy="281" r="5"/></g>
+    </svg>
+   </div>
+   <div class="float-tag tag-two">🎓 Nursery – Class 12<span>Learning at every stage</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="about">
+ <div class="container about-grid">
+  <div class="about-panel">
+   <svg viewBox="0 0 440 330" role="img" aria-label="Open book and growing plant illustration">
+    <circle cx="220" cy="160" r="125" fill="#fff" opacity=".65"/>
+    <path d="M65 213q75-28 155 15 80-43 155-15v55q-80-26-155 17-80-43-155-17z" fill="#2878d0"/>
+    <path d="M220 228q-80-43-155-15v55q80-26 155 17zm0 0q80-43 155-15v55q-80-26-155 17z" fill="#fff" stroke="#173b73" stroke-width="4"/>
+    <path d="M220 223v61" stroke="#173b73" stroke-width="4"/>
+    <path d="M220 217v-93" stroke="#4ec9a6" stroke-width="8" stroke-linecap="round"/>
+    <path d="M220 161q-70 2-63-57 65-8 63 57zm0-23q68 2 72-65-67-8-72 65z" fill="#4ec9a6" stroke="#168b70" stroke-width="3"/>
+    <path d="M165 113q30 13 55 48m72-72q-36 26-72 57" stroke="#fff" stroke-width="4" fill="none"/>
+    <path d="M105 85q20-24 40 0-20 24-40 0zm205 40q20-24 40 0-20 24-40 0z" fill="#ffd166"/>
+    <path d="M105 85h40m165 40h40" stroke="#ff705e" stroke-width="3"/>
+   </svg>
+  </div>
+  <div class="about-copy">
+   <div class="kicker">A warm school community</div>
+   <h2>Helping every learner find their path.</h2>
+   <p class="muted">At CBRK Public High School, our aim is to make learning meaningful and encourage students to grow in knowledge, confidence and character. We want every child to feel welcomed, supported and inspired to do their best.</p>
+   <ul class="checks"><li>Encouraging curiosity and a love of learning</li><li>Building confidence, respect and responsibility</li><li>Supporting students through different stages of school</li></ul>
+   <a class="btn" href="#academics">Explore academics →</a>
+  </div>
+ </div>
+</section>
+
+<section class="section soft" id="academics">
+ <div class="container">
+  <div class="section-head"><div class="kicker">Learning journey</div><h2>From first steps to future goals</h2><p>CBRK Public High School welcomes learners from Nursery through Class 12. The class groups below are a simple guide for families.</p></div>
+  <div class="classes">
+   <div class="class-chip">Nursery – UKG<small>Early years</small></div>
+   <div class="class-chip">Classes 1 – 5<small>Primary years</small></div>
+   <div class="class-chip">Classes 6 – 8<small>Middle years</small></div>
+   <div class="class-chip">Classes 9 – 10<small>Secondary years</small></div>
+   <div class="class-chip">Classes 11 – 12<small>Senior secondary</small></div>
+  </div>
+  <div class="feature-grid" style="margin-top:25px">
+   <article class="feature"><div class="iconbox ic-blue">📚</div><h3>Strong foundations</h3><p>Building understanding, communication and confidence step by step.</p></article>
+   <article class="feature"><div class="iconbox ic-yellow">🔍</div><h3>Curiosity & discovery</h3><p>Encouraging students to ask questions, explore ideas and solve problems.</p></article>
+   <article class="feature"><div class="iconbox ic-mint">🌱</div><h3>Growth at every stage</h3><p>Supporting learners as their interests, skills and ambitions develop.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="campus">
+ <div class="container">
+  <div class="section-head"><div class="kicker">Beyond the classroom</div><h2>Learning, friendship and discovery</h2><p>A positive school experience includes opportunities to explore interests and build strong values.</p></div>
+  <div class="feature-grid">
+   <article class="feature"><div class="iconbox ic-coral">⚽</div><h3>Sports & activity</h3><p>Encouraging teamwork, participation and an active lifestyle.</p></article>
+   <article class="feature"><div class="iconbox ic-purple">🎨</div><h3>Arts & creativity</h3><p>Making space for imagination, expression and cultural activities.</p></article>
+   <article class="feature"><div class="iconbox ic-yellow">🤝</div><h3>Values & community</h3><p>Promoting kindness, respect, responsibility and helping others.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section soft" id="notices">
+ <div class="container">
+  <div class="section-head"><div class="kicker">School noticeboard</div><h2>News & announcements</h2><p>Check back for school updates. These sample cards should be replaced with confirmed notices from the school office.</p></div>
+  <div class="notice-grid">
+   <article class="notice"><div class="notice-label">Admissions</div><h3>Admission enquiries</h3><p>Contact the school to ask about current admissions, required documents and available seats.</p></article>
+   <article class="notice"><div class="notice-label">Calendar</div><h3>Important school dates</h3><p>Official exam schedules, holidays and parent meeting dates can be posted here.</p></article>
+   <article class="notice"><div class="notice-label">School life</div><h3>Events & celebrations</h3><p>Share verified school activities, celebrations and student achievements here.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="life-banner"><div><h2>Every child has a bright future.</h2><p>Take the next step and get in touch with CBRK Public High School for school and admission enquiries.</p></div><a class="btn" href="#contact">Talk to the school ↗</a></div>
+ </div>
+</section>
+
+<section class="section" id="contact">
+ <div class="container">
+  <div class="section-head"><div class="kicker">We'd love to hear from you</div><h2>Contact CBRK Public High School</h2><p>For admissions and general enquiries, please use the school’s official contact details once added.</p></div>
+  <div class="contact-grid">
+   <div class="contact-card">
+    <h3>School information</h3>
+    <div class="contact-row"><div class="contact-icon">📍</div><div><b>Address</b><span>Kamharian, Rithiya Bazar,<br>Siddharthnagar, Uttar Pradesh, India</span></div></div>
+    <div class="contact-row"><div class="contact-icon">🎒</div><div><b>Classes</b><span>Nursery to Class 12</span></div></div>
+    <div class="contact-row"><div class="contact-icon">☎️</div><div><b>Phone</b><span>Official phone number to be added</span></div></div>
+    <div class="contact-row"><div class="contact-icon">✉️</div><div><b>Email</b><span>Official school email to be added</span></div></div>
+   </div>
+   <div class="form-card">
+    <h3>Send an enquiry</h3>
+    <form id="enquiryForm">
+     <label>Your name<input name="name" autocomplete="name" placeholder="Enter your name" required></label>
+     <label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="Enter your phone number" required></label>
+     <label>Enquiry about<select name="topic"><option>Admissions</option><option>Classes and academics</option><option>School information</option><option>Other</option></select></label>
+     <label>Message<textarea name="message" placeholder="How can the school help you?"></textarea></label>
+     <button class="form-submit" type="submit">Prepare enquiry message →</button>
+     <p class="form-help" id="formStatus">This demo form opens your email app when the official school email is added. It does not send or store messages yet.</p>
+    </form>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-inner">
+  <div><div class="footer-brand">CBRK PUBLIC HIGH SCHOOL</div><div class="footer-small">Learn • Grow • Shine</div></div>
+  <div class="footer-small">Kamharian, Rithiya Bazar, Siddharthnagar, Uttar Pradesh, India</div>
+  <div class="footer-small">© <span id="year"></span> CBRK Public High School</div>
+ </div>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.navlinks').classList.remove('open');document.querySelector('.menu').setAttribute('aria-expanded','false')}));
+document.getElementById('enquiryForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const data=new FormData(this);
+ const subject=encodeURIComponent('Enquiry for CBRK Public High School - '+data.get('topic'));
+ const body=encodeURIComponent('Name: '+data.get('name')+'\nPhone: '+data.get('phone')+'\nEnquiry: '+data.get('topic')+'\n\nMessage:\n'+data.get('message'));
+ document.getElementById('formStatus').textContent='The school email address has not been added yet. Please contact the school office directly; the form details have not been sent or stored.';
+});
+</script>
+</body>
+</html>
